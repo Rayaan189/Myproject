@@ -1,0 +1,220 @@
+:root {
+  --primary-color: #141617;
+  --secondary-color: #3D729D;
+  --detail-color: #5EA0BD;
+  --font-color: #f1f2ee;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 0;
+}
+
+header h1 {
+  font-size: 1rem;
+  color: var(--font-color);
+}
+
+header nav a {
+  color: var(--font-color);
+}
+
+header img {
+  width: 20px;
+  height: 20px;
+}
+
+header p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+main h1 {
+  color: var(--detail-color);
+}
+
+nav a {
+  color: #f8f9fa;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+h1 {
+  color: #5EA0BD;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+#map {
+  height: 300px;
+  border-radius: 10px;
+  width: 50%;
+  top: 2rem;
+  left: 4rem;
+}
+
+.btn-primary {
+  background-color: var(--detail-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.service-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.service-card h2 {
+  margin-bottom: 15px;
+  color: var(--detail-color);
+}
+
+.lands-logo>img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.service-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.service-card ul li {
+  margin-bottom: 10px;
+}
+
+.skills-icon {
+  font-size: 3rem;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-icon:hover {
+  transform: scale(1.1);
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-row .col-md-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.thumb-img {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: 1rem;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+#mywork figure {
+  text-align: center;
+  margin: 1rem 0;
+  background-color: #3D729D;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+#mywork figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+#mywork figure:hover {
+  transform: scale(1.05);
+}
+
+#mywork figcaption {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+#contactmeproj {
+  background-color: #3D729D;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contactemoj {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contactemoj i {
+  color: #5EA0BD;
+}
+
+.project-image {
+  background: url("../assets/images/autogarage.webp") no-repeat center center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 770px) {
+#map {
+  width: 100%;
+  left: 0;
+}
+}
